@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  class: MyString
+  str: 1
+  dex: 1
+  int: 1
+  con: 1
+  wis: 1
+  cha: 1
+
+two:
+  name: MyString
+  class: MyString
+  str: 1
+  dex: 1
+  int: 1
+  con: 1
+  wis: 1
+  cha: 1

@@ -1,0 +1,38 @@
+body {
+    margin:0;
+    padding:0;
+    height: 100vh;
+}
+
+.container {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.username {
+    align-items: center;
+    display: flex;
+    margin: 1cqh;
+}
+
+.password {
+    align-items: center;
+    display:flex;
+    margin: 1px;
+
+}
+.input {
+    height: 20%;
+}
+
+.button-form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+

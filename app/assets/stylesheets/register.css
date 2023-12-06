@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+
+.register-form {
+    width: 100%;
+}
+
+
+.register-label {
+    padding: 16px;
+    background-color: white;
+}
+
+.register-input {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.registerbtn {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.signin {
+    display:flex;
+    background-color: #f1f1f1;
+    text-align: center;
+    justify-content: center;
+}

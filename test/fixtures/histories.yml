@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  history: MyText
+  city: MyString
+  race: MyString
+  characteristics: MyString
+  character: one
+
+two:
+  history: MyText
+  city: MyString
+  race: MyString
+  characteristics: MyString
+  character: two

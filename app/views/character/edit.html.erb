@@ -1,0 +1,72 @@
+<div style="display:flex; flex-direction:column; align-items:center">
+
+    <div>
+    <h1>Edit Character</h1>
+    <div>
+
+    <%= form_with model: @character, url: update_character_path, method: :patch, local: true do |f| %>
+    <div style="display:flex; justify-content:space-evenly">
+        <div>
+            <div>
+                <%= f.label :name %>
+                <%= f.text_field :name, {class: "character-input", required: true, value: @character.name} %> 
+            </div>
+            <div>
+                <%= f.label :str %>
+                <%= f.text_field :str, {class: "character-input", required: true, value: @character.str} %></p>
+            </div>
+            <div>
+                <%= f.label :int %>
+                <%= f.text_field :int, {class: "character-input", required: true, value: @character.int}%>							
+            </div>
+            <div>
+                <%= f.label :wis %>
+                <%= f.text_field :wis, {class: "character-input", required: true, value: @character.wis} %>
+            </div>		
+            <div style="display:flex; flex-direction: column">
+                <%= f.label :item%>
+                <%= f.select :item_id, @item.map { |t| [t.name]}, {}, class: "item"%>
+            </div>
+            <div>
+                <%= f.label :city %>
+                <%= f.text_field :city, {class: "character-input", required: true, value: @history.city}%>
+            </div>		
+            <div>
+                <%= f.label :history %>
+                <%= f.text_area :history, {class: "character-input-history", required: true, value: @history.history}%>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <%= f.label :classe %>
+                <%= f.text_field :classe, {class: "character-input", required: true, value: @character.classe}%>
+            </div>
+            <div>
+                <%= f.label :dexterity %>
+                <%= f.text_field :dex, {class: "character-input", required: true, value: @character.dex}%>
+            </div>
+            <div>
+                <%= f.label :con %>
+                <%= f.text_field :con, {class: "character-input", required: true, value: @character.con}%>
+            </div>
+            <div>
+                <%= f.label :cha %>
+                <%= f.text_field :cha, {class: "character-input", required: true, value: @character.cha}%>
+            </div>
+            <div>
+                <%= f.label :race %>
+                <%= f.text_field :race, {class: "character-input", required: true, value: @history.race}%>
+            </div>
+            <div>
+                <%= f.label :characteristics %>
+                <%= f.text_field :characteristics, {class: "character-input", required: true,value: @history.characteristics}%>
+            </div>
+        </div>
+    </div>
+    <div style="display:flex; align-item:center; justify-content:center">
+        <%= f.submit "Update" %>
+
+    </div>
+    <% end %>
+</div>
